@@ -9,7 +9,6 @@ import Footer from "./footer";
 const About = () => {
   return (
     <div>
-      <Header />
       <div className=" p-8 mt-8">
         <div className="flex items-center">
           {/* Left Div */}
@@ -71,7 +70,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
