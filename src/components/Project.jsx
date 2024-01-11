@@ -10,7 +10,7 @@ import ProjectEight from "../assets/images/kira.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Header from "./Header";
-import Footer from "./footer";
+import Footer from "./Footer";
 import Contact from "./contact";
 
 const Project = () => {
