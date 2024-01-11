@@ -4,7 +4,7 @@ import ProjectTwo from "../assets/images/Homehub.png";
 import ProjectThree from "../assets/images/Heychat.png";
 import ProjectFour from "../assets/images/Alltask.png";
 import ProjectFive from "../assets/images/innoson.png";
-import ProjectSix from "../assets/images/digitech.png";
+import ProjectSix from "../assets/images/Digitech.png";
 import ProjectSeven from "../assets/images/netflix.png";
 import ProjectEight from "../assets/images/kira.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
