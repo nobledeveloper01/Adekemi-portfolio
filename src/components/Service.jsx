@@ -3,15 +3,15 @@ import ServiceImg from "../assets/images/service-logo.svg";
 
 const Service = () => {
   return (
-    <div className="mt-10 py-10 bg-gray-500">
-      <div>
+    <div className="lg:mt-10 mt-5 lg:py-8 py-5 bg-gray-500">
+      <div className="mx-4 lg:mx-0">
         <h1 className="text-xl font-semibold  text-orange-500 py-3 text-center">
           My Services
         </h1>
-        <h4 className="text-3xl font-bold mb-5 text-white text-center">
+        <h4 className="lg:text-3xl text-2xl font-bold mb-5 text-white text-center">
           Crafting Through Design and Innovation
         </h4>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-20 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:mx-20 mx-4 lg:my-10">
           {/* Service Card 1 */}
           <div className="bg-white rounded-lg p-6 shadow-md ">
             {/* Logo */}
@@ -28,7 +28,7 @@ const Service = () => {
               Product Design
             </h3>
             {/* Description */}
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-justify">
               Specialize in creating intuitive and visually appealing digital
               interfaces, focusing on enhancing user experiences through
               thoughtful design choices.
@@ -51,7 +51,7 @@ const Service = () => {
               UI/UX Design
             </h3>
             {/* Description */}
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-justify">
               Translating user needs and business goals into intuitive and
               visually compelling digital solutions. My focus is on solving
               real-world problems through innovative design.
@@ -74,7 +74,7 @@ const Service = () => {
               Product Design
             </h3>
             {/* Description */}
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-justify">
               Translating user needs and business goals into intuitive and
               visually compelling digital solutions. My focus is on solving
               real-world problems through innovative design.

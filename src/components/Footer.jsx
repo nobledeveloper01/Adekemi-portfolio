@@ -13,11 +13,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-blue-500 text-white pt-20 relative z-0">
-      <div className="flex justify-between items-center  my-4 mx-16">
+    <footer className="bg-blue-500 text-white lg:pt-20 relative z-0">
+      <div className="flex lg:flex-row flex-col justify-between items-center  lg:my-4 lg:mx-16">
         {/* Left Div - Logo */}
         <div>
-          <img src={Logo}  alt="Logo" className="w-28" />
+          <img src={Logo}  alt="Logo" className="w-28 py-4 lg:py-0" />
         </div>
 
         {/* Middle Div - Navigation and Social Logos */}
@@ -58,12 +58,14 @@ const Footer = () => {
 
         {/* Right Div - Contact Me Button and Copyright */}
         <div className="text-right">
-          <button className="bg-white text-blue-500 px-4 py-2 rounded-md mr-4">
-            Contact Me
+          <button className="bg-white text-blue-500 mb-5 lg:mb-0 px-4 py-2 rounded-md mr-4">
+          <a href="#" target="_blank">
+                Contact Me
+              </a>
           </button>
         </div>
       </div>
-      <div className="text-white border-t-2 py-2 text-center">&copy; {currentYear} All Rights Reserved</div>
+      <h3 className="text-white text-md lg:text-xl border-t-2 py-2 text-center">&copy; {currentYear} All Rights Reserved</h3>
     </footer>
   );
 };

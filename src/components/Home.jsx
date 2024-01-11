@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Image from "../assets/images/pro-picture.png";
 import Service from "./Service";
-import About from "./AboutHome";
+import AboutHome from "./AboutHome";
 import ProjectHome from "./ProjectHome";
 import Contact from "./contact";
 import Footer from "./footer";
@@ -13,12 +13,12 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <section className="mx-16 flex mt-5">
-        <div className="w-1/2 mt-28 ">
-          <h1 className="text-5xl font-semibold mb-3 ">
+      <section className="lg:mx-16 mx-4 lg:flex flex-row lg:mt-5 ">
+        <div className="lg:w-1/2  lg:mt-28 mb-8 lg:mb-0 ">
+          <h1 className="text-4xl w-full lg:text-5xl font-semibold mb-3 ">
             Hi, I’m Adeleke Adekemi
           </h1>
-          <h1 className="text-5xl font-bold mb-7">
+          <h1 className=" text-2xl lg:text-5xl font-bold mb-7">
             a <span className="text-blue-600">Product Designer</span>
           </h1>
           <h4 className="text-gray-900 text-xl">
@@ -30,17 +30,22 @@ const Home = () => {
           <div className="mt-11 flex ">
             {/* Hire Me button */}
             <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-3 mr-4 flex items-center rounded">
-              Hire Me
+            <a href="mailto:adelekeadekemi22@gmail.com" target="_blank">
+                Hire Me
+              </a>
               <FontAwesomeIcon icon={faPaperPlane} className="ml-2" />
+
             </button>
 
             {/* View Portfolio button */}
             <button className="bg-white text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700 px-4 py-3 flex items-center rounded">
-              View Portfolio
+            <a href=" http://www.behance.net/adelekeadekemi " target="_blank" >
+                View Portfolio
+              </a>
             </button>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <img src={Image} alt="my image" />
         </div>
       </section>
@@ -48,7 +53,7 @@ const Home = () => {
       <Service />
       </div>
       
-      <About />
+      <AboutHome />
       <ProjectHome />
       <div >
       <Contact />

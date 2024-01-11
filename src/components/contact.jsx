@@ -10,11 +10,11 @@ import {
 
 const Contact = () => {
   return (
-    <div className="contact-section mx-16 mt-10 relative z-10 bg-white rounded-3xl p-6 shadow-2xl mb-[-50px]">
-      <div className="flex justify-between ">
+    <div className="contact-section lg:mx-16 mt-5 lg:mt-10 relative z-10 bg-white rounded-3xl p-6 shadow-2xl lg:mb-[-50px]">
+      <div className="flex lg:flex-row flex-col justify-between ">
         {/* Left Div */}
-        <div className="left-div w-1/2 pr-12 mt-16">
-          <h1 className="text-2xl font-bold mb-4 text-red-500">
+        <div className="left-div lg:w-1/2 lg:pr-12 lg:mt-16">
+          <h1 className=" text-xl lg:text-2xl font-bold mb-4 text-red-500">
             Let’s discuss your project
           </h1>
           <p className="text-gray-600 text-md mb-8">
@@ -30,8 +30,8 @@ const Contact = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold">Email</h1>
-              <p>your-email@gmail.com</p>
+              <h1 className=" text-md lg:text-xl font-bold">Email</h1>
+              <p className="text-sm lg:text-xl ">adelekeadekemi22@gmail.com</p>
             </div>
           </div>
           <div className="flex items-center">
@@ -43,33 +43,33 @@ const Contact = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold">Phone</h1>
-              <p>+123 456 7890</p>
+              <h1 className=" text-md lg:text-xl font-bold">Phone</h1>
+              <p className="text-sm lg:text-xl">+2348167095747</p>
             </div>
           </div>
           {/* Social Media Icons */}
           <div className="flex mt-8 ">
             <FontAwesomeIcon
               icon={faFacebook}
-              className="text-blue-500 text-2xl mr-4 border border-blue-500 py-2 px-3 rounded  hover:bg-blue-700 hover:text-white"
+              className="text-blue-500 text-xl lg:text-2xl mr-4 border border-blue-500 py-2 px-3 rounded  hover:bg-blue-700 hover:text-white"
             />
             <FontAwesomeIcon
               icon={faBehance}
-              className="text-blue-500 text-2xl mr-4 border border-blue-500 py-2 px-3 rounded  hover:bg-blue-700 hover:text-white"
+              className="text-blue-500 text-xl lg:text-2xl mr-4 border border-blue-500 py-2 px-3 rounded  hover:bg-blue-700 hover:text-white"
             />
             <FontAwesomeIcon
               icon={faSquareXTwitter}
-              className="text-blue-500 text-2xl mr-4 border border-blue-500 py-2 px-3 rounded  hover:bg-blue-700 hover:text-white"
+              className="text-blue-500 text-xl lg:text-2xl mr-4 border border-blue-500 py-2 px-3 rounded  hover:bg-blue-700 hover:text-white"
             />
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="text-blue-500 text-2xl mr-4 border border-blue-500 py-2 px-3 rounded hover:bg-blue-700 hover:text-white"
+              className="text-blue-500 text-xl lg:text-2xl mr-4 border border-blue-500 py-2 px-3 rounded hover:bg-blue-700 hover:text-white"
             />
           </div>
         </div>
 
         {/* Right Div */}
-        <div className="right-div w-1/2 pr-8">
+        <div className="right-div lg:w-1/2 lg-pr-8 mt-10 lg:mt-0">
           <form>
             <label className="block text-lg font-bold mb-2">Name</label>
             <input
