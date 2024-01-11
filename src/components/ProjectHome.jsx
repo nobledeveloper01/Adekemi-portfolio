@@ -32,14 +32,14 @@ const Project = () => {
           </p>
           <div className="mt-3 flex ">
             {/* Hire Me button */}
-            <button className="bg-blue-500 hover:bg-blue-700 text-white px-2 py-1 mr-2 lg:px-4 lg:py-3 lg:mr-4 flex items-center rounded">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white px-2 py-1 mr-2 lg:px-2 lg:py-1 lg:mr-4 flex items-center rounded">
             <a href="https://www.behance.net/gallery/182394109/Adventour-Tourism-Website-Case-Study" target="_blank">
                 View Case Study
               </a>
             </button>
 
             {/* View Portfolio button */}
-            <button className="bg-white text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700 px-4 py-3 flex items-center rounded">
+            <button className="bg-white text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700 px-2 py-1 flex items-center rounded">
             <a href="https://adventour-one.vercel.app" target="_blank" >
                 Go to Website
               </a>
