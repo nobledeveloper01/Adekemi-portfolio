@@ -4,7 +4,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import "./about.css";
 import Header from "./Header";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const About = () => {
   return (
