@@ -7,7 +7,7 @@ import Service from "./Service";
 import AboutHome from "./AboutHome";
 import ProjectHome from "./ProjectHome";
 import Contact from "./contact";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
