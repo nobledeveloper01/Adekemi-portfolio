@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import "./about.css";
-import Header from "./Header";
-import Footer from "./footer";
+
 
 const About = () => {
   return (
