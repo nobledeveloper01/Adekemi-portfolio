@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareXTwitter,
   faLinkedin,
   faFacebook,
-  faBehance
+  faBehance,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -34,53 +35,78 @@ const Header = () => {
       </div>
 
       {/* Navigation */}
-      
+
       <div className="hidden lg:flex items-center justify-between gap-8 space-x-4">
         {/* Social Media Icons */}
         <div className="flex items-center space-x-4 mx-5 mr-20 justify-between">
-        {/* Social media links */}
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon
-            icon={faSquareXTwitter}
-            className="w-6 h-6 text-black hover:text-blue-800"
-          />
-        </a>
-        <a
-          href="http://www.linkedin.com/in/adekemi-adeleke"
-          target="_blank"
-          rel="noopener noreferrer"
+          {/* Social media links */}
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faSquareXTwitter}
+              className="w-6 h-6 text-black hover:text-blue-800"
+            />
+          </a>
+          <a
+            href="http://www.linkedin.com/in/adekemi-adeleke"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="w-6 h-6 text-black hover:text-blue-800"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100007432507473"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="w-6 h-6 text-black hover:text-blue-800"
+            />
+          </a>
+          <a
+            href="http://www.behance.net/adelekeadekemi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faBehance}
+              className="w-6 h-6 text-black hover:text-blue-800"
+            />
+          </a>
+        </div>
+        <NavLink
+          to="/"
+          className={`nav-link ${
+            location.pathname === "/"
+              ? "text-blue-700"
+              : "text-black hover:text-blue-700"
+          }`}
         >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="w-6 h-6 text-black hover:text-blue-800"
-          />
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100007432507473"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className="w-6 h-6 text-black hover:text-blue-800"
-          />
-        </a>
-        <a
-          href="http://www.behance.net/adelekeadekemi"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faBehance}
-            className="w-6 h-6 text-black hover:text-blue-800"
-          />
-        </a>
-      </div>
-        <NavLink to="/" className="text-blue-700">
           Home
         </NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
+        <NavLink
+          to="/about"
+          className={`nav-link ${
+            location.pathname === "/about"
+              ? "text-blue-700"
+              : "text-black hover:text-blue-700"
+          }`}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={`nav-link ${
+            location.pathname === "/projects"
+              ? "text-blue-700"
+              : "text-black hover:text-blue-700"
+          }`}
+        >
+          Projects
+        </NavLink>
         <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
           <a href="mailto:adelekeadekemi22@gmail.com" target="_blank">
             Contact Me
@@ -104,27 +130,42 @@ const Header = () => {
           <div className="flex flex-col items-center mt-8">
             <NavLink
               to="/"
-              className="text-blue-700 text-xl mb-4"
+              className={`mb-4 text-xl nav-link ${
+                location.pathname === "/"
+                  ? "text-blue-700"
+                  : "text-black hover:text-blue-700"
+              }`}
               onClick={toggleMobileMenu}
             >
               Home
             </NavLink>
             <NavLink
               to="/about"
-              className="text-blue-700 text-xl mb-4"
+              className={`nav-link mb-4 text-xl ${
+                location.pathname === "/about"
+                  ? "text-blue-700"
+                  : "text-black hover:text-blue-700"
+              }`}
               onClick={toggleMobileMenu}
             >
               About
             </NavLink>
             <NavLink
               to="/projects"
-              className="text-blue-700 text-xl mb-4"
+              className={`nav-link mb-4 text-xl ${
+                location.pathname === "/projects"
+                  ? "text-blue-700"
+                  : "text-black hover:text-blue-700"
+              }`}
               onClick={toggleMobileMenu}
             >
               Projects
             </NavLink>
             <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
-              <a href="mailto:adelekeadekemi22@gmail.com" className="text-white">
+              <a
+                href="mailto:adelekeadekemi22@gmail.com"
+                className="text-white"
+              >
                 Contact Me
               </a>
             </button>

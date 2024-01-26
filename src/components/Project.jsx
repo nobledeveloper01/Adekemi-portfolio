@@ -68,9 +68,9 @@ const Project = () => {
               </button>
 
               {/* View Portfolio button */}
-              <button className="bg-white text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700 px-4 py-3 flex items-center rounded">
+              <button className="bg-white text-blue-700 hover:text-white hover:bg-blue-700 border border-blue-700 px-2 py-1 mr-2 lg:px-4 lg:py-3 lg:mr-4 flex items-center rounded">
               <a href="https://adventour-one.vercel.app "  target="_blank" >
-                View Portfolio
+                View Website
               </a>
               </button>
             </div>

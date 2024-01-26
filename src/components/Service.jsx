@@ -20,7 +20,7 @@ const Service = () => {
               <img
                 src={ServiceImg}
                 alt="Service 1 Logo"
-                className="w-16 h-16 mx-auto hover:text-white"
+                className="w-16 h-16 mx-auto "
               />
             </div>
             {/* Title */}
@@ -71,7 +71,7 @@ const Service = () => {
             </div>
             {/* Title */}
             <h3 className="text-xl text-center font-semibold mb-2 text-blue-600">
-              Product Design
+              Visual Design
             </h3>
             {/* Description */}
             <p className="text-gray-600 text-justify">
